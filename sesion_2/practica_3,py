@@ -1,0 +1,13 @@
+adn = "AACCAGTTCA"
+gADN = []
+
+for i in range(len(adn)-3):
+    if adn[i:i+4] == "CAGT":
+        gADN.append(1)        
+    else:
+        gADN.append(0)   
+
+if 1 in gADN:
+    print "Presente"
+else:
+    print "No Presente"
