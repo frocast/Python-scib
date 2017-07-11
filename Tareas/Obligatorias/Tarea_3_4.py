@@ -28,4 +28,3 @@ clf.fit(X, Y)
 # print clf.predict([1, 0, 1, 1])
 
 print 'la Prediccion es: ' clf.predict([0, 1])
-
