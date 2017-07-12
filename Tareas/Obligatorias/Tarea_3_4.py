@@ -34,8 +34,8 @@ y = uniform(0, 1, npts)
 z = [clf.predict([[x[i], y[i]]])[0] for i in range(npts)]
 
 # define grid.
-xi = np.linspace(0, 1, 500)
-yi = np.linspace(0, 1, 500)
+xi = np.linspace(0, 1, 100)
+yi = np.linspace(0, 1, 100)
 # grid the data.
 zi = griddata(x, y, z, xi, yi, interp='linear')
 # contour the gridded data, plotting dots at the nonuniform data points.
