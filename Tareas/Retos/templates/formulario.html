@@ -1,0 +1,16 @@
+{% if chk %}
+<h2>Datos Guardados con exito</h2>
+{% endif %}
+<form action="/encuesta" method="POST">
+    <label name="gender">¿Eres hombre o mujer?</label><br>
+    <input type="radio" name="gender" value="male"> Mujer
+    <input type="radio" name="gender" value="female"> Hombres<br>
+    <label name="music">¿Te gustas los animales?</label><br>
+    <input type="radio" name="animals" value="yes"> Yes
+    <input type="radio" name="animals" value="no"> No<br>
+    <label name="music">¿Genero musical favorito?</label><br>
+    <input type="radio" name="music" value="rock"> Rock
+    <input type="radio" name="music" value="metal"> Metal
+    <input type="radio" name="music" value="otros"> Otros<br><br>
+    <input type="submit" value="Enviar">
+</form> 
