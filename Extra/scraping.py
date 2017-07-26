@@ -14,8 +14,9 @@ try:
     # print req.ok
     # soup = BeautifulSoup(req.text, "html5lib")
     # print soup
+    # http://medico-146102.appspot.com
     while True: 
-        solicitud = requests.get('http://www.sepi.esimez.ipn.mx')
+        solicitud = requests.get('https://www.google.com')
         if solicitud.ok:
             soup = BeautifulSoup(solicitud.text, "lxml")
             tiempo = str(time.strftime("%X"))
