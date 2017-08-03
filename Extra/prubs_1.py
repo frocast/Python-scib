@@ -12,7 +12,7 @@ tiempo_inicio = str(time.strftime("%X"))
 #            print "Petición número: %d, Hora %s"  % (conexiones, tiempo)
 try:
     while True:
-        mensaje="t"
+        mensaje="t"*512
         if mi_socket.send(mensaje): 
             #print "Mensaje Enviado con exito"
             tiempo_final = str(time.strftime("%X"))
